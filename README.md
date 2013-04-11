@@ -29,3 +29,25 @@ engines. These will probably useful while you're working on the exercies. :-)
 
 * [Getting Started with Engines](http://edgeguides.rubyonrails.org/engines.html)
 * [Rails::Engine API docs](http://api.rubyonrails.org/classes/Rails/Engine.html)
+
+## Exercises
+
+Form small teams, 2-3 people.
+
+### Up and running
+
+Start by cloning the starter app: 
+`git clone git://github.com/bmaland/kds_talks.git`.
+
+Run the following steps:
+
+```shell
+cd kds_talks
+bundle install
+rake db:migrate
+bundle exec rake kds:import_talks
+bundle exec rails server
+```
+
+In theory you should now have a working Rails application running at 
+`http://localhost:3000`. If not, shout out and we'll help you along.
