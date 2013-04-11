@@ -59,10 +59,20 @@ While working with these engines, take note of which techniques they use for
 letting you customize their behaviour. Don't be afraid to look at the source
 code!
 
-- [ ] Install [devise](https://github.com/plataformatec/devise) for adding
+- Install [devise](https://github.com/plataformatec/devise) for adding
   authentication/signup/etc to your application.
-- [ ] Install [active_admin](git@github.com:gregbell/active_admin.git) for
+- Install [active_admin](git@github.com:gregbell/active_admin.git) for
   administration of the content in your application.
 
 If you have more time before the break, consider adding a new feature to the
-application which requires signup. E.g. commenting or likes on the talks.
+application which requires signup. E.g. commenting or likes on the talks. 
+You could also try out the [kaminari](https://github.com/amatsuda/kaminari) 
+engine for pagination.
+
+### Part 2 - Creating your own engines
+
+Choose on of the following ideas, or do something entirely different if you
+got some good ideas!
+
+- Create a simple engine for metrics. Use [ActiveSupport::Notifications](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)
+  to listen on controller events and store them in the database. See the [hints](hints/metrics_engine.md) for more input.
