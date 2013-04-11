@@ -32,12 +32,13 @@ engines. These will probably useful while you're working on the exercies. :-)
 
 ## Exercises
 
-Form small teams, 2-3 people.
+Form small teams, 2-3 people. Hopefully you'll be able to present something
+(code/UI/features/ideas) at the end of the workshop.
 
 ### Up and running
 
-Start by cloning the starter app: 
-`git clone git://github.com/bmaland/kds_talks.git`.
+Start by cloning the [KDS Talks](https://github.com/bmaland/kds_talks) starter
+app: `git clone git://github.com/bmaland/kds_talks.git`.
 
 Run the following steps:
 
@@ -51,3 +52,17 @@ bundle exec rails server
 
 In theory you should now have a working Rails application running at 
 `http://localhost:3000`. If not, shout out and we'll help you along.
+
+### Part 1 - Working with third party engines
+
+While working with these engines, take note of which techniques they use for
+letting you customize their behaviour. Don't be afraid to look at the source
+code!
+
+- [ ] Install [devise](https://github.com/plataformatec/devise) for adding
+  authentication/signup/etc to your application.
+- [ ] Install [active_admin](git@github.com:gregbell/active_admin.git) for
+  administration of the content in your application.
+
+If you have more time before the break, consider adding a new feature to the
+application which requires signup. E.g. commenting or likes on the talks.
