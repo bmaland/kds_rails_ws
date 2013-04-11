@@ -13,7 +13,7 @@ it's own git repository etc.
 
 ## Use scaffolding to create a good starting point
 
-`bundle exec rails generate scaffold clog controller:string path:string status:integer view_runtime:float db_runtime:float`
+`bundle exec rails generate scaffold event controller:string path:string status:integer view_runtime:float db_runtime:float duration:float`
 
 ## Add a root route
 
@@ -25,7 +25,7 @@ it's own git repository etc.
 cd test/dummy
 rake -T # notice the install migrations rake task!
 
-rake clogs:install:migrations
+rake your_engine_name:install:migrations
 
 rake db:migrate 
 
@@ -43,6 +43,7 @@ ActiveSupport::Notifications.subscribe(/process_action.action_controller/) do |*
 
   # TODO make sure these params match your database columns
   params = event.payload.slice(:controller, :path, :status, :view_runtime, :db_runtime)
+  params[:duration] = event.duration
 
   # TODO update with a reference to your actual model name
   YourEngine::YourModel.create!(params)
