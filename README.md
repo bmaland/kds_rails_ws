@@ -74,5 +74,7 @@ engine for pagination.
 Choose on of the following ideas, or do something entirely different if you
 got some good ideas!
 
-- Create a simple engine for metrics. Use [ActiveSupport::Notifications](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)
-  to listen on controller events and store them in the database. See the [hints](hints/metrics_engine.md) for more input.
+- Create a simple engine for metrics. Use
+  [ActiveSupport::Notifications](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)
+  to listen on controller events and store them in the database. See the
+  [metrics engine hints](hints/metrics_engine.md) for more input.
