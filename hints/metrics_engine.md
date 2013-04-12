@@ -31,7 +31,9 @@ repository etc.
 
 ## Add a root route
 
-`root to: 'clogs#index' `
+Add the following to `config/routes.rb` in the engine folder.
+
+`root to: 'clogs#index'`
 
 ## Run your engine in isolation
 

@@ -78,3 +78,4 @@ got some good ideas!
   [ActiveSupport::Notifications](http://api.rubyonrails.org/classes/ActiveSupport/Notifications.html)
   to listen on controller events and store them in the database. See the
   [metrics engine hints](hints/metrics_engine.md) for more input.
+- Create a simple engine for adding a blog section.
