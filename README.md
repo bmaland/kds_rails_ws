@@ -61,7 +61,7 @@ code!
 
 - Install [devise](https://github.com/plataformatec/devise) for adding
   authentication/signup/etc to your application.
-- Install [active_admin](git@github.com:gregbell/active_admin.git) for
+- Install [active_admin](https://github.com/gregbell/active_admin) for
   administration of the content in your application.
 
 If you have more time before the break, consider adding a new feature to the
